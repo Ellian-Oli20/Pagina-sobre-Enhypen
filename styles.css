@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=UnifrakturCook:wght@700&display=swap');
+
+body {
+    font-family: 'Cinzel', 'UnifrakturCook', cursive, serif;
+    background: linear-gradient(135deg, #181018 0%, #2d0c1a 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    margin: 0;
+    padding: 32px 0 24px 0;
+    background: linear-gradient(90deg, #830619 60%, #7b0c2e 100%);
+    color: #fffbe9;
+    text-align: center;
+    font-size: 4em;
+    letter-spacing: 4px;
+    font-family: 'UnifrakturCook', cursive, serif;
+    text-shadow: 2px 2px 16px #0a0408, 0 0 12px #b3001b;
+    z-index: 1000;
+    box-shadow: 0 2px 16px #7b0c2e;
+    opacity: 1;
+    animation: pulseShadow 2.5s infinite alternate;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=UnifrakturCook:wght@700&display=swap');
+
+body {
+    font-family: 'Cinzel', 'UnifrakturCook', cursive, serif;
+    background: linear-gradient(135deg, #181018 0%, #2d0c1a 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    position: relative;
+    z-index: 1;
+}
+h1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    margin: 0;
+    padding: 32px 0 24px 0;
+    background: linear-gradient(90deg, #ac162d 60%, #7b0c2e 100%);
+    color: #fffbe9;
+    text-align: center;
+    font-size: 4em;
+    letter-spacing: 4px;
+    font-family: 'UnifrakturCook', cursive, serif;
+    text-shadow: 2px 2px 16px #0a0408, 0 0 12px #b3001b;
+    z-index: 1000;
+    box-shadow: 0 2px 16px #7b0c2e;
+    opacity: 1;
+    animation: pulseShadow 2.5s infinite alternate;
+}
+
+h1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    margin: 0;
+    padding: 32px 0 24px 0;
+    background: linear-gradient(90deg, #750314 60%, #8d0e34 100%);
+    color: #fffbe9;
+    text-align: center;
+    font-size: 4em;
+    letter-spacing: 4px;
+    font-family: 'UnifrakturCook', cursive, serif;
+    text-shadow: 2px 2px 16px #0a0408, 0 0 12px #b3001b;
+    z-index: 1000;
+    box-shadow: 0 2px 16px #7b0c2e;
+    opacity: 1;
+    animation: pulseShadow 2.5s infinite alternate;
+}
+
+h2 {
+    color: #ececec;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'UnifrakturCook', cursive, serif;
+    text-shadow: 1px 1px 6px #0a0408;
+    opacity: 0;
+    animation: fadeInTitle 1.2s 0.3s ease-out forwards, pulseShadow 2.5s infinite alternate;
+}
+
+@keyframes fadeInTitle {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseShadow {
+    from { text-shadow: 2px 2px 8px #0a0408, 0 0 0 #b3001b; }
+    50% { text-shadow: 2px 2px 16px #7b0c2e, 0 0 12px #b3001b; }
+    to { text-shadow: 2px 2px 8px #0a0408, 0 0 0 #b3001b; }
+}
+
+p {
+    color: #f3f3f3;
+    max-width: 600px;
+    margin: 10px auto;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.galeria img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(30,10,20,0.45);
+    border: 3px solid #0a0408;
+    transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+    background: #1a0a13;
+    filter: grayscale(30%) brightness(0.95);
+}
+.galeria img:hover {
+    transform: scale(1.07) rotate(-2deg);
+    box-shadow: 0 8px 24px rgba(44,12,26,0.55);
+    border-color: #b3001b;
+    filter: none;
+}
+
+video {
+    display: block;
+    margin: 24px auto;
+    width: 100%;
+    max-width: 380px;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px #2d0c1a99;
+    background: #181018;
+    transition: box-shadow 0.3s;
+}
+video:hover {
+    box-shadow: 0 8px 32px #b3001b99;
+}
+
+a {
+    color: #f8f8f8;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+    text-shadow: 1px 1px 4px #0a0408;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+a:hover {
+    text-decoration: underline;
+    color: #b3001b;
+    text-shadow: 2px 2px 8px #7b0c2e;
+}
+
+form {
+    background: #181018cc;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(30,10,20,0.35);
+    padding: 24px;
+    max-width: 400px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    color: #f8f8f8;
+    font-weight: bold;
+    margin-bottom: 6px;
+    align-self: flex-start;
+    font-family: 'Cinzel', serif;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #2d0c1a;
+    border-radius: 8px;
+    font-size: 1em;
+    background: #181018;
+    color: #f8f8f8;
+    font-family: 'Cinzel', serif;
+}
+
+input[type="submit"] {
+    background: linear-gradient(90deg, #b3001b 60%, #7b0c2e 100%);
+    color: #f8f8f8;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+    box-shadow: 0 2px 8px #0a0408;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+input[type="submit"]:hover {
+    background: linear-gradient(90deg, #7b0c2e 60%, #b3001b 100%);
+    box-shadow: 0 4px 16px #b3001b99;
+    transform: scale(1.05);
+}
+
+audio {
+    display: block;
+    margin: 16px auto;
+    filter: drop-shadow(0 2px 6px #0a0408);
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+        margin-top: 24px;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+    .galeria img {
+        width: 100px;
+        height: 100px;
+    }
+    video {
+        max-width: 98vw;
+    }
+    form {
+        max-width: 98vw;
+        padding: 12px;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=UnifrakturCook:wght@700&display=swap');
+
+    font-family: 'Cinzel', 'UnifrakturCook', cursive, serif;
+    background: linear-gradient(135deg, #181018 0%, #2d0c1a 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    margin-top: 40px;
+    color: #f8f8f8;
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 3px;
+    font-family: 'UnifrakturCook', cursive, serif;
+    text-shadow: 2px 2px 8px #0a0408;
+    opacity: 0;
+    animation: fadeInTitle 1.2s ease-out forwards, pulseShadow 2.5s infinite alternate;
+}
+
+h2 {
+    color: #ececec;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'UnifrakturCook', cursive, serif;
+    text-shadow: 1px 1px 6px #0a0408;
+    opacity: 0;
+    animation: fadeInTitle 1.2s 0.3s ease-out forwards, pulseShadow 2.5s infinite alternate;
+}
+
+@keyframes fadeInTitle {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseShadow {
+    from { text-shadow: 2px 2px 8px #0a0408, 0 0 0 #b3001b; }
+    50% { text-shadow: 2px 2px 16px #7b0c2e, 0 0 12px #b3001b; }
+    to { text-shadow: 2px 2px 8px #0a0408, 0 0 0 #b3001b; }
+}
+
+p {
+    color: #f3f3f3;
+    max-width: 600px;
+    margin: 10px auto;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.galeria img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(30,10,20,0.45);
+    border: 3px solid #0a0408;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background: #1a0a13;
+}
+
+.galeria img:hover {
+    transform: scale(1.07) rotate(-2deg);
+    box-shadow: 0 8px 24px rgba(44,12,26,0.55);
+    border-color: #2d0c1a;
+}
+
+a {
+    color: #f8f8f8;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+    text-shadow: 1px 1px 4px #0a0408;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ececec;
+}
+
+form {
+    background: #181018cc;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(30,10,20,0.35);
+    padding: 24px;
+    max-width: 400px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    color: #f8f8f8;
+    font-weight: bold;
+    margin-bottom: 6px;
+    align-self: flex-start;
+    font-family: 'Cinzel', serif;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #2d0c1a;
+    border-radius: 8px;
+    font-size: 1em;
+    background: #181018;
+    color: #f8f8f8;
+    font-family: 'Cinzel', serif;
+}
+
+input[type="submit"] {
+    background: #2d0c1a;
+    color: #f8f8f8;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px #0a0408;
+}
+
+input[type="submit"]:hover {
+    background: #1a0a13;
+}
+
+audio {
+    display: block;
+    margin: 16px auto;
+    filter: drop-shadow(0 2px 6px #0a0408);
+}
+h1, h2 {
+    opacity: 0;
+    animation: fadeInTitle 1.2s ease-out forwards, pulseShadow 2.5s infinite alternate;
+}
+
+@keyframes fadeInTitle {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseShadow {
+    from { text-shadow: 2px 2px 8px #0a0408, 0 0 0 #b3001b; }
+    50% { text-shadow: 2px 2px 16px #7b0c2e, 0 0 12px #b3001b; }
+    to { text-shadow: 2px 2px 8px #0a0408, 0 0 0 #b3001b; }
+}
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=UnifrakturCook:wght@700&display=swap');
+
+body {
+    font-family: 'Cinzel', 'UnifrakturCook', cursive, serif;
+    background: linear-gradient(135deg, #181018 0%, #2d0c1a 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+    position: relative;
+    z-index: 1;
+}
+    top: 0;
+    left: 0;
+    width: 100vw;
+    margin: 0;
+    padding: 18px 0 12px 0;
+    background: linear-gradient(90deg, #3a0010 60%, #7b0c2e 100%);
+    color: #f8f8f8;
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 3px;
+    font-family: 'UnifrakturCook', 'Cinzel', cursive, serif;
+    text-shadow: 2px 2px 8px #0a0408;
+    z-index: 1000;
+    box-shadow: 0 2px 12px #0a0408;
+}
+h1 {font-family: 'Cinzel', 'UnifrakturCook', cursive, serif;
+    background: linear-gradient(135deg, #1a0a13 0%, #2d0c1a 100%);
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+    color: #f8f8f8;
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 3px;
+    font-family: 'UnifrakturCook', cursive, serif;
+    text-shadow: 2px 2px 8px #0a0408;
+}
+h2 {
+    color: #ececec;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    text-shadow: 1px 1px 6px #0a0408;
+}
+
+p {
+    color: #f3f3f3;
+    max-width: 600px;
+    margin: 10px auto;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.galeria img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(30,10,20,0.45);
+    border: 3px solid #0a0408;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background: #1a0a13;
+}
+
+.galeria img:hover {
+    transform: scale(1.07) rotate(-2deg);
+    box-shadow: 0 8px 24px rgba(44,12,26,0.55);
+    border-color: #2d0c1a;
+}
+
+a {
+    color: #f8f8f8;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+    text-shadow: 1px 1px 4px #0a0408;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ececec;
+}
+
+    font-family: 'Cinzel', 'UnifrakturCook', cursive, serif;
+    background: linear-gradient(135deg, #1a0a13 0%, #2d0c1a 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 40px;
+    color: #f8f8f8;
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 3px;
+    font-family: 'UnifrakturCook', cursive, serif;
+    text-shadow: 2px 2px 8px #0a0408;
+}
+    font-family: 'Cinzel', serif;
+}
+
+input[type="submit"] {
+    background: #2d0c1a;
+    color: #f8f8f8;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px #0a0408;
+}
+
+input[type="submit"]:hover {
+    background: #1a0a13;
+}
+
+audio {
+    display: block;
+    margin: 16px auto;
+    filter: drop-shadow(0 2px 6px #0a0408);
+}
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=UnifrakturCook:wght@700&display=swap');
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #7b0c2e 0%, #b3001b 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 40px;
+    color: #fff0f5;
+    text-align: center;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #ffe4e1;
+    margin-top: 30px;
+    text-align: center;
+}
+
+h2 {
+    color: #ececec;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'UnifrakturCook', cursive, serif;
+    text-shadow: 1px 1px 6px #0a0408;
+}
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.galeria img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(123,12,46,0.25);
+    transition: transform 0.2s;
+}
+
+.galeria img:hover {
+    transform: scale(1.07);
+    box-shadow: 0 8px 24px rgba(60,60,100,0.18);
+}
+
+a {
+    color: #ffe4e1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+    font-family: 'Cinzel', 'UnifrakturCook', cursive, serif;
+    background: linear-gradient(135deg, #181018 0%, #2d0c1a 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+    position: relative;
+    z-index: 1;
+}
+
+label {
+    color: #ffe4e1;
+    font-weight: bold;
+    margin-bottom: 6px;
+    align-self: flex-start;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+        border: 1px solid #b3001b;
+    border-radius: 8px;
+    font-size: 1em;
+        background: #fff0f5;
+}
+
+input[type="submit"] {
+    background: #b3001b;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+input[type="submit"]:hover {
+    background: #7b0c2e;
+}
+
+audio {
+    display: block;
+    margin: 16px auto;
+    filter: drop-shadow(0 2px 6px #3a0010);
+}
